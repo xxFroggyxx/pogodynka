@@ -64,4 +64,11 @@ class Measurement
 
         return $this;
     }
+
+    public function getFahrehneit(): ?string
+    {
+        $fahrenheit = $this->celsius * 9 / 5 + 32;
+        
+        return "$fahrenheit";
+    }
 }
